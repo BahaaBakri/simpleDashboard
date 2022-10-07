@@ -1,0 +1,70 @@
+<div class="statistics-container">
+    <div class="element">
+        <fa-icon  class="ellipsis" [icon]="faEllipsis"></fa-icon>
+        <div class="data">
+            <div class="icon">
+                <fa-icon id="leads" class="sidebar-icon" [icon]="faChartPie"></fa-icon>
+            </div>
+            <div class="number">
+                {{leads | number}}
+            </div>
+        </div>
+        <div class="actions">
+            <div class="name">Leads</div>
+            <div class="action">
+                <a href="#">4 new added</a>
+            </div>
+        </div>
+    </div>
+    <div class="element">
+        <fa-icon  class="ellipsis" [icon]="faEllipsis"></fa-icon>
+        <div class="data">
+            <div class="icon">
+                <fa-icon id="totalLeads" class="sidebar-icon" [icon]="faUsers"></fa-icon>
+            </div>
+            <div class="number">
+                {{totalLeads | number}}
+            </div>
+        </div>
+        <div class="actions">
+            <div class="name">Total leads</div>
+            <div class="action">
+                <a href="#">more</a>
+            </div>
+        </div>
+    </div>
+    <div class="element">
+        <fa-icon  class="ellipsis" [icon]="faEllipsis"></fa-icon>
+        <div class="data">
+            <div class="icon">
+                <fa-icon id="totalHotLeads" class="sidebar-icon" [icon]="faUserSecret"></fa-icon>
+            </div>
+            <div class="number">
+                {{totalHotLeads | number}}
+            </div>
+        </div>
+        <div class="actions">
+            <div class="name">Total hot leads</div>
+            <div class="action">
+                <a href="#">more</a>
+            </div>
+        </div>
+    </div>
+    <div class="element">
+        <fa-icon  class="ellipsis" [icon]="faEllipsis"></fa-icon>
+        <div class="data">
+            <div class="icon">
+                <fa-icon id="totalFollowUpdates" class="sidebar-icon" [icon]="faArrowsSpin"></fa-icon>
+            </div>
+            <div class="number">
+                {{totalFollowUpdates | number}}
+            </div>
+        </div>
+        <div class="actions">
+            <div class="name">Total follow updates</div>
+            <div class="action">
+                <a href="#">more</a>
+            </div>
+        </div>
+    </div>
+</div>

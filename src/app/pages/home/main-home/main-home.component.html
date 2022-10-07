@@ -1,0 +1,12 @@
+<div class="head">
+    <h2>Dashboard</h2>
+    <mat-form-field appearance="fill">
+        <p>Add Bars +</p>
+        <mat-select [formControl]="toppings" multiple>
+          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<statistics></statistics>
+<charts></charts>
+

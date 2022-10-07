@@ -1,0 +1,62 @@
+$sidebar_background : #0090d7;
+$selected_item_bg : #0077ae;
+.sidebar {
+    position: fixed;
+    z-index: 1000;
+    border-radius: 0 20px 20px 0;
+    height: 100%;
+    background-color: $sidebar_background;
+    .logo {
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #AAA;
+        }
+
+    }
+    .sidebar-items {
+        height: 60%;
+        min-width: 80px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        .sidebar-item {
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            padding-top: 5px;
+            .sidebar-icon {
+                border-radius: 50%;
+                height: 40px;
+                padding: 8px;
+            }
+            .sidebar-item-name {
+                color:#fff;
+
+            }
+        }
+        .sidebar-item.selected .sidebar-icon {
+            background-color: $selected_item_bg;
+        }
+        .sidebar-item.opened.selected {
+            background-color: $selected_item_bg;
+            .sidebar-icon {
+                background-color: transparent;
+            }
+            
+        }
+    }
+    .toggle-open-close {
+        position: absolute;
+        right: 7px;
+        bottom: 10px;
+    }
+    .sidebar-icon {
+        color:#fff;
+    }
+}

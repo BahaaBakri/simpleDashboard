@@ -1,0 +1,17 @@
+<div class="sidebar">
+    <div class="logo">
+        <div>
+
+        </div>
+    </div>
+    <div class="sidebar-items">
+        <div class="sidebar-item" [ngClass]="{'selected' : item.id === selectedItem?.id, 'opened' : isOpened}"  (click)="onNavigate(item)" *ngFor="let item of items">
+            <fa-icon class="sidebar-icon" [icon]="item.icon"></fa-icon>
+            <span class="sidebar-item-name ms-2" *ngIf="isOpened">{{item.name}}</span>
+        </div>
+    </div>
+    <div class="toggle-open-close" (click)="toggleSideMenu()">
+        <fa-icon *ngIf="!isOpened" class="sidebar-icon" [icon]="faChevronRight"></fa-icon>
+        <fa-icon *ngIf="isOpened" class="sidebar-icon" [icon]="faChevronLeft"></fa-icon>
+    </div>
+</div>

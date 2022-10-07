@@ -1,0 +1,31 @@
+.navbar {
+    border-top: 2px solid #DDD;
+    border-bottom: 2px solid #EEE;
+    .avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    .nav-item {
+        position: relative;
+        .cal-num, .not-num {
+            color:#fff;
+            position: absolute;
+            border-radius: 50%;
+            // padding: 5px;
+            font-size: 8px;
+            width: 18px;
+            height: 18px;
+            top: 0;
+            right: 0;
+            text-align: center;
+        }
+        .cal-num {
+            background-color: #080;
+        }
+        .not-num {
+            background-color: #f00;
+        }
+    }
+    
+}

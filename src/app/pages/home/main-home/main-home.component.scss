@@ -1,0 +1,22 @@
+$sidebar_background : #0090d7;
+::ng-deep {
+    .mat-select .mat-select-arrow-wrapper, .mat-select .mat-select-value {
+        display: none;
+    }
+    .mat-form-field .mat-form-field-underline, .mat-form-field .mat-form-field-subscript-wrapper {
+        display: none;
+    }
+    .mat-form-field .mat-form-field-flex {
+        background-color: #fff;
+        width: 100px;
+    }
+
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    p {
+        color:$sidebar_background;
+        font-weight: bold;
+    }
+}
