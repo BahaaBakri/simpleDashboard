@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Route, Router } from '@angular/router';
-import { faChevronRight, faChevronLeft, IconDefinition } from "@fortawesome/free-solid-svg-icons"
+import { faChevronRight, faChevronLeft, IconDefinition } from '@fortawesome/free-solid-svg-icons'
 import {NavItem, navItems} from '../models/nav-items'
 
 @Component({
@@ -9,7 +9,7 @@ import {NavItem, navItems} from '../models/nav-items'
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  @Output('sideMenuToggled') sideMenuToggled = new EventEmitter()
+  @Output() sideMenuToggled = new EventEmitter()
   items:NavItem[];
   faChevronRight: IconDefinition;
   faChevronLeft: IconDefinition;

@@ -1,4 +1,4 @@
-import { faBook, faChartArea, faChartSimple, faFilter, faGears, faHands, faHandshake, faHome, faMagic, faMicrophone, faObjectGroup, faPager, faUsers, faVolumeHigh, IconDefinition } from "@fortawesome/free-solid-svg-icons"
+import { faBook, faChartArea, faChartSimple, faFilter, faGears, faHands, faHandshake, faHome, faMagic, faMicrophone, faObjectGroup, faPager, faUsers, faVolumeHigh, IconDefinition } from '@fortawesome/free-solid-svg-icons'
 
 export interface NavItem {
     id:number,
